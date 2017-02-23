@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Ficha de Datos</h1>
+  <section id="Formulario">
+    <form>
+      <div class="">
+        <label for="nombre">Ingresa tu nombre</label>
+        <input  class = "input" id="nombre" type="text" name="nombre" value="" minlength="1" required>
+      </div><br>
+      <div class="">
+        <label for="apellido">Ingresa tu apellido</label>
+        <input class = "input" id="apellido" type="text" name="apellido" value="" required>
+      </div><br>
+      <div class="">
+        <label for="dni">Ingresa tu DNI</label>
+        <input class ="input"  id="dni" type="text" name="dni" value="" pattern="\d{8}$" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" maxlength="8" required>
+      </div><br>
+      <div class="">
+        <label for="direccion">Ingresa tu dirección</label>
+        <input  class = "input" id="direccion" type="text" name="apellido" value="" required>
+      </div><br>
+      <input id = "enviar" type="button" name="button" value="enviar">
+    </form>
+    <div id="records"></div>
+  <section>
+  <script src="assets/js/main.js" charset="utf-8"></script>
+</body>
+</html>
